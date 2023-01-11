@@ -8,25 +8,27 @@ if (minhaIdade < idadeFamilia) console.log("Minha idade é menor");
 if (minhaIdade === idadeFamilia) console.log("Nossa idade é igual");
 
 // Qual valor é retornado na seguinte expressão?
-var expressao = 5 - 2 && 5 - " " && 5 - 2;
+var expressao = 5 - 2 && 5 - " " && 5 - 2; //3, ele retorna o último verdadeiro, nesse exemplo todos são verdadeiros
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
 var nome = "Andre";
-console.log(!!nome);
 var idade = 28;
-console.log(!!idade);
 var possuiDoutorado = false;
-console.log(!!possuiDoutorado);
 var empregoFuturo;
-console.log(!!empregoFuturo);
 var dinheiroNaConta = 0;
-console.log(!!dinheiroNaConta);
+console.log(
+  !!nome,
+  !!idade,
+  !!possuiDoutorado,
+  !!empregoFuturo,
+  !!dinheiroNaConta
+);
 
 // Compare o total de habitantes do Brasil com China (valor em milhões)
 var brasil = 207;
 var china = 1340;
-if (china > brasil) console.log("A china tem mais habitantes");
-else console.log("o brasil tem menos habitantes");
+if (china > brasil) console.log("A China tem mais habitantes");
+else console.log("o Brasil tem menos habitantes");
 
 // O que irá aparecer no console?
 if ("Gato" === "gato" && 5 > 2) {
